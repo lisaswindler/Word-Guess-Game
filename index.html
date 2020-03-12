@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/JavaScript/game.js"></script>
+    <script src="assets/javascript/game.js"></script>
     <title>Guess the Sea Creature</title>
 </head>
 <body>
@@ -16,12 +16,21 @@
     <section class="container mt-3" id="gamearea">
         <h2>Press a letter to make a guess</h2>
         <div class="bg-white mt-5 p-4">
-            <p class="" id="correct-letters"></p>
-            <p id="empty-spaces">Word: </p>
-            <p id="wrong-letters">Wrong letters: </p>
-            <p id="guesses-left">Remaining guesses: </p>
-            <p id="wins-text">Wins: </p>
-            <p id="losses-text">Losses: </p>
+            <p>Word: 
+                <div id="correct-letters"></div>
+            </p>
+            <p>You already guessed: 
+                <div id="wrong-letters"></div>
+            </p>
+            <p>Remaining guesses:
+                <div id="guesses-left"></div>
+            </p>    
+            <p>Wins:
+                <div id="wins-text"></div>
+            </p>
+            <p>Losses:
+                <div id="losses-text"></div>
+            </p>
         </div>
     </section>
 

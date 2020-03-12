@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Guess the Sea Creature</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Can you guess the sea creature?</h1>
+    </div>
+
+    <section class="container mt-3" id="gamearea">
+        <h2>Press a letter to make a guess</h2>
+        <div class="bg-white mt-5 p-4">
+            <p>Word: 
+                <div id="correct-letters"></div>
+            </p>
+            <p>You already guessed: 
+                <div id="wrong-letters"></div>
+            </p>
+            <p>Remaining guesses:
+                <div id="guesses-left"></div>
+            </p>    
+            <p>Wins:
+                <div id="wins-text"></div>
+            </p>
+            <p>Losses:
+                <div id="losses-text"></div>
+            </p>
+        </div>
+    </section>
+    <script type="text/javascript">
+    // Create variables that reference the HTML so we know where to display things
+        var correctLetters = document.getElementById("correct-letters");
+        var wrongLetters = document.getElementById("wrong-letters");
+        var guessesLeft = document.getElementById("guesses-left");
+        var winsText = document.getElementById("wins-text");
+        var lossesText = document.getElementById("losses-text");
+        var emptySpaces = document.getElementById("empty-spaces");
+    
+    // Create an array of words to choose from
+        var seaAnimals = ["whale", "shark", "lamprey", "angelfish",
+        "swordfish", "stingray", "octopus", "squid", "manatee", "anemone",
+        "barnacle", "cuttlefish", "narwhal", "porpoise", "beluga"];
+
+        // Take a random word from the array
+        var seaAnimal = seaAnimals[Math.floor(Math.random() * seaAnimals.length)];
+        console.log(seaAnimal);
+    
+        // Track number of wins
+        var wins = 0;
+        winsText.textContent = wins;
+
+        // Track number of losses
+        var losses = 0;
+        lossesText.textContent = losses
+
+        // Create number of guesses allowed
+        var remainingGuesses = 12;
+        guessesLeft.textContent = remainingGuesses;
+
+        // Function to turn word into underscores
+        function makeBlankArray(arr) {
+        var blankArray = [];
+        for (var i = 0; i < arr.length; i++) {
+            blankArray.push('_');
+        }
+        return blankArray;
+        }
+       // Display word as blank
+       correctLetters.textContent = makeBlankArray(seaAnimal);
+       
+       // Function to split word into letters
+       function makeArray(str) {
+        var newArray = str.split("");
+        return newArray;
+        }
+        console.log(makeArray(seaAnimal));
+    
+        // Track keys pressed
+         document.onkeyup = function (event) {
+
+            // If key pressed is a letter, record the key pressed and store it
+            var letter = event.key;
+            var letterCode = event.keyCode;
+            if (letterCode >= 65 && letterCode <= 90) {
+                //check if that key was already pressed
+                if (wrongLetters.includes(letter) === false || correctLetters.includes(letter) === false) {
+                    console.log(letter);
+                    if (seaAnimal.includes(letter) === true) {
+                        correctLetters.textContent = "yes"
+                    } else {
+                        wrongLetters.append = letter;
+                        remainingGuesses--;
+                    }
+                }
+            }
+         }    
+    </script>
+</body>
+</html>
