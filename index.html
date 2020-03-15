@@ -9,26 +9,33 @@
 </head>
 <body>
     <div class="container">
-        <h1>Can you guess the sea creature?</h1>
+        <h1 class="mt-3">Can you guess the sea creature?</h1>
     </div>
-    <section class="container mt-3" id="gamearea">
-        <h2>Press a letter to make a guess</h2>
-        <div class="bg-white mt-5 p-4 text-center">
-            <p>
-                <div id="correct-letters" class="display-4"></div>
-            </p>
-            <p>You already guessed: 
-                <div id="wrong-letters" class="border p-3 w-50 mx-auto"></div>
-            </p>
-            <p>Remaining guesses:
-                <div id="guesses-left"></div>
-            </p>    
-            <p>Wins:
-                <div id="wins-text"></div>
-            </p>
-            <p>Losses:
-                <div id="losses-text"></div>
-            </p>
+    <section class="container mt-3 w-75" id="gamearea">
+        <h2>Press a letter to start playing</h2>
+            <div class="row bg-white rounded mt-4 mb-5 shadow p-4 text-center">
+                <div class="col-lg-6 col-md-12 pt-3 pb-3 pl-1 pr-1">
+                <p>
+                    <div id="correct-letters" class="h1 text-uppercase pb-3"></div>
+                </p>
+                <p>You already guessed: 
+                    <div id="wrong-letters" class="border mx-auto text-uppercase rounded"></div>
+                </p>
+                <p>Remaining guesses:
+                    <div id="guesses-left" class="btn btn-info"></div>
+                </p>    
+                <p>Wins:
+                    <div id="wins-text" class="btn btn-info"></div>
+                </p>
+                <p>Losses:
+                    <div id="losses-text" class="btn btn-info"></div>
+                </p>
+            </div>
+            <div class="card col-md-6 pl-0 pr-0 border-0 m-auto">
+                <div id="image">
+                    <img src="assets/images/ocean-waves.jpg">
+                </div>
+            </div>
         </div>
     </section>
 

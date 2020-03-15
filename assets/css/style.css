@@ -3,10 +3,29 @@ h1, h2 {
     text-align: center;
 }
 
+.h1 {
+    font-weight: lighter;
+}
+
 body {
     background-image: url("../images/oceanpic.jpg");
 }
 
 section {
     color: black;
+}
+
+.border {
+    height: 50px;
+    padding-top: 12px;
+    width: 70%;
+}
+
+.fa-question-circle {
+    font-size: 300px;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
 }
