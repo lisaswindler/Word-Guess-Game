@@ -120,7 +120,7 @@ var allLetters = [];
                             }
                             wins++;
                             winsText.textContent = wins;
-                            setTimeout(function() {randomWord = makeNewGame()}, 100);       
+                            setTimeout(function() {randomWord = makeNewGame()}, 500);       
                         }
                 } else {
                         var addLetter = letter + " ";
@@ -136,4 +136,4 @@ var allLetters = [];
                 }
             }
         }
- }    
+ };    
