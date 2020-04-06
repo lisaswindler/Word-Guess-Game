@@ -88,35 +88,35 @@ var allLetters = [];
                     }
                     if (numCorrectLetters === randomWord.length) {
                         if (randomWord === "whale") {
-                                document.getElementById("image").innerHTML = '<img src="assets/images/whale.jpg">';
+                                document.getElementById("image").innerHTML = '<img src="images/whale.jpg">';
                             } else if (randomWord === "shark") {
-                                document.getElementById("image").innerHTML = '<img src="assets/images/shark.jpg">';      
+                                document.getElementById("image").innerHTML = '<img src="images/shark.jpg">';      
                             } else if (randomWord === "lamprey") {
-                                document.getElementById("image").innerHTML = '<img src="assets/images/lamprey.jpg">';  
+                                document.getElementById("image").innerHTML = '<img src="images/lamprey.jpg">';  
                             } else if (randomWord === "angelfish") {
-                                document.getElementById("image").innerHTML = '<img src="assets/images/angelfish.jpg">';   
+                                document.getElementById("image").innerHTML = '<img src="images/angelfish.jpg">';   
                             } else if (randomWord === "swordfish") {
-                                document.getElementById("image").innerHTML = '<img src="assets/images/swordfish.jpg">';   
+                                document.getElementById("image").innerHTML = '<img src="images/swordfish.jpg">';   
                             } else if (randomWord === "stingray") {
-                                document.getElementById("image").innerHTML = '<img src="assets/images/stingray.jpg">';   
+                                document.getElementById("image").innerHTML = '<img src="images/stingray.jpg">';   
                             } else if (randomWord === "octopus") {
-                                document.getElementById("image").innerHTML = '<img src="assets/images/octopus.jpg">';   
+                                document.getElementById("image").innerHTML = '<img src="images/octopus.jpg">';   
                             } else if (randomWord === "squid") {
-                                document.getElementById("image").innerHTML = '<img src="assets/images/squid.jpg">';   
+                                document.getElementById("image").innerHTML = '<img src="images/squid.jpg">';   
                             } else if (randomWord === "manatee") {
-                                document.getElementById("image").innerHTML = '<img src="assets/images/manatee.jpg">';   
+                                document.getElementById("image").innerHTML = '<img src="images/manatee.jpg">';   
                             } else if (randomWord === "anemone") {
-                                document.getElementById("image").innerHTML = '<img src="assets/images/anemone.jpg">';   
+                                document.getElementById("image").innerHTML = '<img src="images/anemone.jpg">';   
                             } else if (randomWord === "barnacle") {
-                                document.getElementById("image").innerHTML = '<img src="assets/images/barnacle.jpg">';   
+                                document.getElementById("image").innerHTML = '<img src="images/barnacle.jpg">';   
                             } else if (randomWord === "cuttlefish") {
-                                document.getElementById("image").innerHTML = '<img src="assets/images/cuttlefish.jpg">';   
+                                document.getElementById("image").innerHTML = '<img src="images/cuttlefish.jpg">';   
                             } else if (randomWord === "narwhal") {
-                                document.getElementById("image").innerHTML = '<img src="assets/images/narwhal.jpg">';   
+                                document.getElementById("image").innerHTML = '<img src="images/narwhal.jpg">';   
                             } else if (randomWord === "porpoise") {
-                                document.getElementById("image").innerHTML = '<img src="assets/images/porpoise.jpg">';   
+                                document.getElementById("image").innerHTML = '<img src="images/porpoise.jpg">';   
                             } else if (randomWord === "beluga") {
-                                document.getElementById("image").innerHTML = '<img src="assets/images/beluga.jpg">';   
+                                document.getElementById("image").innerHTML = '<img src="images/beluga.jpg">';   
                             }
                             wins++;
                             winsText.textContent = wins;
